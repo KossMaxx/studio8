@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService.Calc.Server";
+
+package calc;
+
+import "OperationType.proto";
+
+message CalcOperationRequest {
+	CalcOperationType Operation=1;
+	int32 value=2;
+}

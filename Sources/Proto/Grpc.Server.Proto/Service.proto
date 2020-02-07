@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService.Calc.Server";
+
+package calc;
+import "Request.proto";
+import "Response.proto";
+
+service CalcOperation {
+  rpc  Execute(CalcOperationRequest) returns (CalcOperationReply);
+}
