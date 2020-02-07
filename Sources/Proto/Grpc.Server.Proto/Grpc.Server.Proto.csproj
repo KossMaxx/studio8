@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.26.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="OperationStatus.proto" GrpcServices="Server"/>
+    <Protobuf Include="OperationType.proto" GrpcServices="Server"/>
+    <Protobuf Include="Request.proto" GrpcServices="Server"/>
+    <Protobuf Include="Response.proto" GrpcServices="Server"/>
+    <Protobuf Include="Service.proto" GrpcServices="Server"/>
+  </ItemGroup>
+
+</Project>

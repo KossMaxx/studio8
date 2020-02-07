@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService.Calc.Client";
+
+package calc;
+
+message CalcOperationStatus
+{
+	int32 Code = 1;
+	string Message=2;
+}

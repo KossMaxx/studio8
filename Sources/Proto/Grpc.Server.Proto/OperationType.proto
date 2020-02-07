@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService.Calc.Server";
+
+package calc;
+
+enum CalcOperationType
+{
+	Square=0;
+	Cube=1;
+}
